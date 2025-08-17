@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Norsebold';
+  src: url('./font/Norsebold.otf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.left{
+  height: 100vh;
+  width: 40vw;
+  background-image: url("font/sample.jpg");
+  background-size: cover;   /* fits the full image inside */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left p{
+  color: rgb(212, 209, 209);
+  position: absolute;
+  bottom: 0;
+}
+
+.left p a{
+  color: rgb(212, 209, 209);
+}
+
+.logo{
+  background-color: rgba(0, 0, 0, 0.495);
+  position: relative;
+  top: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%;
+  padding: 1em;
+  gap: 1em;
+}
+img{
+  width: 5em;
+}
+.logo h2{
+  font-family: 'Norsebold';
+  color: white;
+  font-size: 5em;
+}
+
+main{
+  display: flex;
+}
+
+.container{
+  margin-top: 14vh;
+  margin-bottom: 10vh;
+}
+
+.header{
+  padding: 0 150px 38px 40px;
+}
+
+.header p{
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.box{
+  color: black;
+  box-shadow: 0px 3px 17px -9px black;
+  padding: 15px 50px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box h3{
+  font-size:1.5em;
+}
+
+input{
+  width: 220px;
+  height: 30px;
+  font-size: 1.1em;
+  border-radius: 4px;
+  border: 2px solid #ccc; 
+  outline: none;
+}
+input:focus{
+  border-color: rgb(107, 107, 251);
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+input:invalid{
+  border-color: red;
+}
+legend{
+  font-size: .8em;
+}
+
+.firstline, .secondline, .lastline{
+  display: flex;
+  gap: 50px;
+}
+
+button{
+  background-color: #596D48;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: none;
+  margin:25px 50px;
+}
+.footer a {
+  text-decoration: none;
+  color: green;
+}
+
+.footer{
+  font-weight: 500;
+  margin-left:40px;
+}
